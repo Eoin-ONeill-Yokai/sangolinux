@@ -1,0 +1,47 @@
+type: rpm-ostree
+install:
+# Basic environment needs
+  - power-profiles-daemon # For laptop power profile
+  - xorg-x11-server-Xwayland # X11 compat
+  - xdg-user-dirs # For common home folders / environment variables, such as ~/Downloads, ~/Documents, etc etc
+  - polkit # Security / privledge elevation
+  - dbus-daemon
+  - dbus-tools # Interaction with dbus daemon
+  - vulkan-tools # Basic vulkan testing tools
+
+# CLI Utils
+  - bat # A better cat
+  - helix # A different text editor, vim substitute. Invoke `hx`.
+  
+# Sound
+  - wireplumber
+  - pipewire
+  - pamixer
+  - pulseaudio-utils
+
+# Networking
+  - NetworkManager-openvpn
+  - NetworkManager-openconnect
+
+# Bluetooth
+  - bluez
+  - bluez-tools
+
+# Extra utilities
+  - gnome-disk-utility
+
+# Themes and Design
+  - materia-gtk-theme
+  - materia-kde
+  - gnome-themes-extra
+  
+  # Icons
+  - gnome-icon-theme
+  - paper-icon-theme
+  - breeze-icon-theme 
+  - papirus-icon-theme
+
+  # Fonts
+  - abattis-cantarell-fonts # Cantarell font
+  - fontawesome-fonts-all # All other fonts
+  - google-noto-emoji-fonts # For basic emoji

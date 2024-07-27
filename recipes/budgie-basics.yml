@@ -1,0 +1,33 @@
+type: rpm-ostree
+install:
+  - budgie-backgrounds
+  - budgie-control-center
+  - budgie-desktop
+  - budgie-desktop-defaults
+  - budgie-desktop-view
+  - budgie-screensaver
+  - dconf #gsettings
+  - gnome-settings-daemon
+  - gnome-software
+  
+  - network-manager-applet
+  - ModemManager
+  - at-spi2-atk
+  - at-spi2-core
+  - fprintd-pam
+  - glib-networking
+  - gnome-bluetooth
+  - gnome-color-manager
+  - gnome-disk-utility
+  - gnome-keyring-pam
+  - gvfs-afc
+  - gvfs-afp
+  - gvfs-archive
+  - gvfs-fuse
+  - gvfs-goa
+  - gvfs-gphoto2
+  - gvfs-mtp
+  - gvfs-smb
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gtk
+  - xdg-user-dirs-gtk
