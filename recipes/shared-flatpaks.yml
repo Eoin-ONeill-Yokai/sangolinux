@@ -11,7 +11,7 @@ system:
     - org.mozilla.Thunderbird # Default Mail Viewer
     - it.mijorus.gearlever # Appimage 'installer' tool
     - org.pipewire.Helvum # Simple pipewire pipe viewing
-    - io.mpv.MPV # Simple video player
+    - io.mpv.Mpv # Simple video player
     - it.mijorus.smile # Simple emoji picker
     # - org.gnome.Loupe
     # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
