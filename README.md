@@ -1,8 +1,19 @@
-# BlueBuild Template &nbsp; [![build-ublue](https://github.com/Eoin-ONeill-Yokai/sangolinux/actions/workflows/build.yml/badge.svg)](https://github.com/Eoin-ONeill-Yokai/sangolinux/actions/workflows/build.yml)
+# Sango Linux (Name Pending) &nbsp; [![build-ublue](https://github.com/Eoin-ONeill-Yokai/sangolinux/actions/workflows/build.yml/badge.svg)](https://github.com/Eoin-ONeill-Yokai/sangolinux/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-After setup, it is recommended you update this README to describe your custom image.
+> [!WARNING]  
+> All images are as-is and under heavy development and should only be considered for personal use. Unless you know me really well, I would advise not just using this blindly unless using a VM. 😄
+
+Linux images based on the [Blue Build](https://blue-build.org/) project. Uses [UBlue Main](https://universal-blue.org/) as a base image but will come with presets that I think are sensible for various desktop environments.
+
+- `harlock:latest` is a simple tiling desktop environment using Hyprland. Depending on how things change in the future, this might migrate to Sway w/ animation plugins. It should also come with `flavours` base16 theming options and configurations.
+- `sango:latest` uses a Budgie desktop environment that's similar to "classic" windows paradigms. Mostly using this for my personal development goals as I would like to contribute more design ideas to this project in the future.
+- `maetel:latest` uses a Gnome 3 desktop environment that's similar to MacOS. This one should be *really* simple gnome environment with some extra utilities.
+
+### Design Goals
+- Utility scripts and services that help keep clean user folders or other file naming goals.
+- Presets that *I* think make sense for each desktop environment.
+- A test bed for developing and working on multiple desktop environments. 
 
 ## Installation
 
