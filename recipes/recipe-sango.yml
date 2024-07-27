@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: Sango
+name: sango
 # description will be included in the image's metadata
 description: A desktop environment familiar to new users. 
 

@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: Tetsuro
+name: tetsuro
 # description will be included in the image's metadata
 description: Core distribution. Same base packages and used as a base for other images. 
 
