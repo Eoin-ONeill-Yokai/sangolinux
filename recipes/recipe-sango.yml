@@ -20,20 +20,19 @@ modules:
   
   - from-file: essentials.yml
   - from-file: budgie-basics.yml
+  - from-file: budgie-flatpaks.yml
   - from-file: shared-flatpaks.yml
 
   - type: files
     files:
       - source: system/etc
-        destination: /
+        destination: /etc
       - source: system/sango # copies config/files/usr into your image's /usr.
                   # put configuration files you want in /etc/ on a booted system 
                   # in /usr/etc/ in the image. read more in files module reference.
         destination: /
       - source: system/usr
         destination: /usr
-      - source: system/etc
-        destination: /etc
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
