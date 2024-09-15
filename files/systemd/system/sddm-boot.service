@@ -9,7 +9,7 @@ Before=sddm.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/etc/sddm/sddm-user-setup
+ExecStart=/etc/sddm/sddm-user-setup
 RemainAfterExit=yes
 
 [Install]
