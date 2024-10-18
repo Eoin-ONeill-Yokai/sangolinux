@@ -9,7 +9,11 @@ install:
   - dconf #gsettings
   - gnome-settings-daemon
   - gnome-software
-  
+
+  - nautilus
+  - file-roller
+  - file-roller-nautilus
+
   - network-manager-applet
   - ModemManager
   - at-spi2-atk
