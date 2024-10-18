@@ -9,7 +9,7 @@ Before=gdm.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/etc/gdm/gdm-user-setup
+ExecStart=/etc/gdm/gdm-user-setup
 RemainAfterExit=yes
 
 [Install]
