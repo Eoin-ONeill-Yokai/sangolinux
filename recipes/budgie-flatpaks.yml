@@ -3,3 +3,4 @@ notify: true # Send notification after install/uninstall is finished (true/false
 system:
   install:
     - app.devsuite.Ptyxis
+    - io.missioncenter.MissionCenter
