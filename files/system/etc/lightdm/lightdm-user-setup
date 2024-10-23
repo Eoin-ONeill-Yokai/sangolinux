@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+getent group lightdm > /dev/null || groupadd -r lightdm
+getent passwd lightdm > /dev/null || useradd -r -g lightdm -c "LightDM Greeter Account" -d /var/lib/lightdm -s /usr/sbin/nologin lightdm
