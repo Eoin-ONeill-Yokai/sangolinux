@@ -1,0 +1,4 @@
+type: rpm-ostree
+install:
+  - lightdm
+  - slick-greeter
