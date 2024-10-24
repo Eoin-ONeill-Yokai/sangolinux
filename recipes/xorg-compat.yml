@@ -1,0 +1,9 @@
+# X11 extended support. Really just a guess at why budgie might not be working...
+type: rpm-ostree
+install:
+  - xorg-x11-drivers
+  - xorg-x11-drv-amdgpu
+  - xorg-x11-server-common
+  - xorg-x11-server-Xorg
+  - xorg-x11-xauth
+  - xorg-x11-xinit
