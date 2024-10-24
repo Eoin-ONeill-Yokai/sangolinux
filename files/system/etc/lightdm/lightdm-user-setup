@@ -1,4 +1,11 @@
 #!/usr/bin/sh
 
+# Kudos to https://github.com/HikariNeee/Celestite for the following work around. 
+if [ ! -d /var/cache/lightdm ]; then echo "creating /var/cache/lightdm"; mkdir /var/cache/lightdm; fi
+if [ ! -d /var/log/lightdm ]; then echo "creating /var/log/lightdm"; mkdir /var/log/lightdm; fi
+if [ ! -d /var/lib/lightdm ]; then echo "creating /var/lib/lightdm"; mkdir /var/lib/lightdm; fi
+if [ ! -d /var/lib/lightdm-data ]; then echo "creating /var/lib/lightdm-data"; mkdir /var/lib/lightdm-data; fi
+
 getent group lightdm > /dev/null || groupadd -r lightdm
-getent passwd lightdm > /dev/null || useradd -r -g lightdm -c "LightDM Greeter Account" -d /var/lib/lightdm -s /usr/sbin/nologin lightdm
+getent passwd lightdm > /dev/null || useradd -r -g lightdm -c "LightDM Greeter Account" -M -d /var/lib/lightdm -s /usr/sbin/nologin lightdm
+systemctl set-default graphical.target
