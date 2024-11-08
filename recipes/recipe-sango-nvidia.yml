@@ -5,6 +5,7 @@ description: A desktop environment familiar to new users. (W/ Nvidia Proprietary
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/eoin-oneill-yokai/sango
+image-version: latest
 
 modules:
   - from-file: nvidia.yml
