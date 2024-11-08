@@ -1,0 +1,10 @@
+# image will be published to ghcr.io/<user>/<name>
+name: sango-nvidia
+# description will be included in the image's metadata
+description: A desktop environment familiar to new users. (W/ Nvidia Proprietary Drivers)
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/eoin-oneill-yokai/sango
+
+modules:
+  - from-file: nvidia.yml
