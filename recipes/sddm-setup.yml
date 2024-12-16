@@ -1,4 +1,6 @@
-type: systemd
-system:
-  enabled:
-    - sddm-boot.service
+modules:
+  - type: systemd 
+    system:
+      enabled:
+        - sddm-boot.service
+  - from-file: sddm-theme-install-eucalyptus-drop.yml
