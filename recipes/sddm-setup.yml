@@ -3,4 +3,4 @@ modules:
     system:
       enabled:
         - sddm-boot.service
-  - from-file: sddm-theme-install-eucalyptus-drop.yml
+  - from-file: sddm-theme-install.yml
