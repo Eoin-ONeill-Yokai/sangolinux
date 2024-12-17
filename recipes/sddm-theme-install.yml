@@ -1,0 +1,4 @@
+modules:
+  - type: script
+    sripts:
+      - install_sddm_simple_theme.sh
