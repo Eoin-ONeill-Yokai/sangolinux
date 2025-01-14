@@ -11,7 +11,7 @@ mv ./simple-sddm /usr/share/sddm/themes/
 
 cat <<EOF > /etc/sddm.conf.d/sddm.conf
 [Theme]
-Current=simple
+Current=simple-sddm
 EOF
 
 touch /usr/share/sddm/themes_installed.flag
