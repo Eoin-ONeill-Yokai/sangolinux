@@ -1,14 +1,19 @@
 #!/bin/bash
 
-# Tell build process to exit if there are any errors.
-set -oue pipefail
+set -oue pipefail #fail on error
+set -x #echo on
+
+echo "Installing theme: simple-sddm"
 
 dnf install git
 
-git clone https://github.com/JaKooLit/simple-sddm.git ./simple_sddm
-sudo mv ./simple_sddm /usr/share/sddm/themes/
+git clone https://github.com/JaKooLit/simple-sddm.git ./simple-sddm
+mkdir -p /usr/share/sddm/themes
+sudo mv ./simple-sddm /usr/share/sddm/themes/
 
 cat <<EOF >> /etc/sddm.conf.d/sddm.conf
 [Theme]
 Current=simple
 EOF 
+
+touch /usr/share/sddm/themes_installed.flag
