@@ -3,4 +3,7 @@ modules:
     system:
       enabled:
         - sddm-boot.service
-  - from-file: sddm-theme-install.yml
+
+  - type: script
+    scripts:
+      - install_sddm_simple_theme.sh

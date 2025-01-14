@@ -1,11 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -oue pipefail #fail on error
 set -x #echo on
 
-echo "Installing theme: simple-sddm"
-
-dnf install git
+echo "Installing Theme: simple-sddm ..."
 
 git clone https://github.com/JaKooLit/simple-sddm.git ./simple-sddm
 mkdir -p /usr/share/sddm/themes
