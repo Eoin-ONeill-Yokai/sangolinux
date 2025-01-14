@@ -11,8 +11,10 @@ install:
   - gnome-software
 
   - nautilus
+  - nautilus-extensions
   - file-roller
   - file-roller-nautilus
+  - sushi #quick previewer for nautilus
 
   - network-manager-applet
   - ModemManager
