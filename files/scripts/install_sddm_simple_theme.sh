@@ -9,7 +9,7 @@ git clone https://github.com/JaKooLit/simple-sddm.git ./simple-sddm
 mkdir -p /usr/share/sddm/themes
 mv ./simple-sddm /usr/share/sddm/themes/
 
-cat <<EOF >> /etc/sddm.conf.d/sddm.conf
+cat <<EOF > /etc/sddm.conf.d/sddm.conf
 [Theme]
 Current=simple
 EOF 
