@@ -14,4 +14,10 @@ cat <<EOF > /etc/sddm.conf.d/sddm.conf
 Current=simple-sddm-2
 EOF
 
+sed -i 's/^MainColor=.*$/MainColor="#b8b8b8"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
+sed -i 's/^AccentColor=.*$/AccentColor="#01a299"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
+sed -i 's/^BlurRadius=.*$/BlurRadius="0"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
+sed -i 's/^FormPosition=.*$/FormPosition="center"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
+sed -i 's/^Background=.*$/Background="Backgrounds\/earth_lights_environment_globe-cc0.jpg"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
+
 touch /usr/share/sddm/themes_installed.flag

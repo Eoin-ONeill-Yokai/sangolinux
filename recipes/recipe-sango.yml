@@ -28,6 +28,8 @@ modules:
                   # put configuration files you want in /etc/ on a booted system 
                   # in /usr/etc/ in the image. read more in files module reference.
         destination: /
+      - source: system/graphics/earth_lights_environment_globe-cc0.jpg
+        destination: /usr/share/sddm/themes/simple-sddm-2/Backgrounds/earth_lights_environment_globe-cc0.jpg
       - source: system/usr
         destination: /usr
 
