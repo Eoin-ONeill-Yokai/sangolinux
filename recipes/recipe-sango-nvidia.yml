@@ -4,8 +4,33 @@ name: sango-nvidia
 description: A desktop environment familiar to new users. (W/ Nvidia Proprietary Drivers)
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/eoin-oneill-yokai/sango
+base-image: ghcr.io/ublue-os/base-nvidia:
 image-version: latest # latest is also supported if you want new updates ASAP
 
+# module configuration, executed in order
+# you can include multiple instances of the same module
 modules:
-  - from-file: nvidia.yml
+  - from-file: sddm-basics.yml
+  - from-file: sddm-setup.yml
+  
+  - from-file: essentials.yml
+  - from-file: xorg-compat.yml # TODO: Determine efficacy. 
+
+  - from-file: budgie-basics.yml
+  - from-file: budgie-flatpaks.yml
+  - from-file: shared-flatpaks.yml
+
+  - type: files
+    files:
+      - source: system/etc
+        destination: /etc
+      - source: system/sango # copies config/files/usr into your image's /usr.
+                  # put configuration files you want in /etc/ on a booted system 
+                  # in /usr/etc/ in the image. read more in files module reference.
+        destination: /
+      - source: system/graphics/earth_lights_environment_globe-cc0.jpg
+        destination: /usr/share/sddm/themes/simple-sddm-2/Backgrounds/earth_lights_environment_globe-cc0.jpg
+      - source: system/usr
+        destination: /usr
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
