@@ -22,7 +22,7 @@ install:
   - hyprland # The WM
   - xdg-desktop-portal-hyprland #Basic xdg desktop portals, needed for flatpak
   - waybar # Top bar
-  - hyprpaper # Wallpaper support
+#  - hyprpaper # Wallpaper support (TODO missing from newest DNF)
   - dunst # Notification Daemon
 
 # File and Management Applications
