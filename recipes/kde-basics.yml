@@ -1,0 +1,108 @@
+type: rpm-ostree
+install:
+  - plasma-desktop
+  - plasma-workspace
+  - plasma-workspace-wallpapers
+  
+  - sddm-wayland-plasma
+
+  - kwin
+
+  # Languages
+  - glibc-all-langpacks
+
+  # Themes
+  - breeze-icon-theme
+  - papirus-icon-theme
+  - adwaita-gtk2-theme
+  - plasma-breeze
+  - kde-gtk-config
+  - kde-settings-sddm
+
+  # Automatic bug reports, security and error handling
+  - abrt-desktop #Tool for sending bug reports
+  - PackageKit-command-not-found # Tool for displaying missing command line tools (command not found)
+  - NetworkManager-config-connectivity-fedora # Connects to fedora servers for checking validity of network manager (Q: Maybe skip?)
+  - firewall-config
+  - fprintd-pam # Fingerprint and other lock management
+  - kaccounts-integration-qt6
+  - kaccounts-providers
+  - kde-inotify-survey
+  - kdebugsettings
+  - kdialog
+  - kdnssd # DNS 
+  - ksshaskpass # Ask for ssh key password
+  - kwalletmanager5 # Password management
+  - pam-kwallet
+  - pinentry-qt
+  - polkit-kde
+  - plasma-nm # Network manager interface
+  - plasma-nm-l2tp # .. And additional extensions
+  - plasma-nm-openconnect
+  - plasma-nm-openswan
+  - plasma-nm-openvpn
+  - plasma-nm-pptp
+  - plasma-nm-vpnc
+  - signon-kwallet-extension
+  - systemd-oomd-defaults
+
+  # Shared application memory needs
+  - akonadi-server
+  - akonadi-server-mysql
+
+  # File management
+  - dolphin
+  - filelight
+  - ark # Archive manager
+  - ffmpegthumbs
+  - udisks2
+  - kde-partitionmanager
+  - kdegraphics-thumbnailers
+  - kdenetwork-filesharing
+  - kf6-baloo-file
+  - kfind
+  - kio-admin
+  - kio-gdrive
+  - samba-usershares
+  - spectacle
+  
+  # Utility and Drivers
+  - audiocd-kio
+  - bluedevil
+  - cups-pk-helper
+  - colord-kde
+  - flatpak-kcm # Flatpak permission management
+  - kde-connect
+  - kde-settings-pulseaudio
+  - kcharselect
+  - krdp #Remote display protocol
+  - krfb #Ditto
+  - kscreen 
+  - kscreenlocker
+  - libappindicator-gtk3
+  - phonon-qt6-backend-vlc
+  - vlc-plugin-gstreamer
+  - xwaylandvideobridge
+
+  # Others
+  - plasma-discover
+  - plasma-discover-notifier
+  - plasma-pk-updates
+  - plasma-disks
+  - plasma-drkonqi
+  - plasma-pa
+  - plasma-print-manager
+  - plasma-systemmonitor
+  - plasma-thunderbolt
+  - plasma-vault
+  - plasma-welcome
+  - konsole
+  - kmenuedit
+  - kwrite
+  - kinfocenter
+  - kjournald
+
+  - kdeplasma-addons
+  - kwebkitpart
+  - khelpcenter
+  - plasma-desktop-doc

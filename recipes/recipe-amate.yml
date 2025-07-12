@@ -1,0 +1,34 @@
+# image will be published to ghcr.io/<user>/<name>
+name: amate
+# description will be included in the image's metadata
+description: KDE based 'classic' style operating system.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/base-main
+image-version: latest # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - from-file: sddm-basics.yml
+  - from-file: sddm-setup.yml
+  
+  - from-file: essentials.yml
+
+  - from-file: kde-basics.yml
+  - from-file: shared-flatpaks.yml
+
+  - type: files
+    files:
+      - source: system/etc
+        destination: /etc
+      - source: system/amate # copies config/files/usr into your image's /usr.
+                  # put configuration files you want in /etc/ on a booted system 
+                  # in /usr/etc/ in the image. read more in files module reference.
+        destination: /
+      - source: system/graphics/earth_lights_environment_globe-cc0.jpg
+        destination: /usr/share/sddm/themes/simple-sddm-2/Backgrounds/earth_lights_environment_globe-cc0.jpg
+      - source: system/usr
+        destination: /usr
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully

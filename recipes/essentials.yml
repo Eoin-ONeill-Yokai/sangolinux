@@ -13,6 +13,7 @@ install:
   - bat # A better cat
   - helix # A different text editor, vim substitute. Invoke `hx`.
   - tmux
+  - toolbox
   
 # Sound
   - wireplumber
