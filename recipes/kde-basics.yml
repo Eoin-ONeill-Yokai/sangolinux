@@ -4,7 +4,7 @@ install:
   - plasma-workspace
   - plasma-workspace-wallpapers
   
-  - sddm-wayland-plasma
+#  - sddm-wayland-plasma
 
   - kwin
 
