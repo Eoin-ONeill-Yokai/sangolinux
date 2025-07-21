@@ -5,7 +5,7 @@
 # 	- https://github.com/ublue-os/main/issues/224#issuecomment-1987851271
 
 [Unit]
-Description=Create GDM user on system boot
+Description=Create SDDM user on system boot
 Before=sddm.service
 
 [Service]
