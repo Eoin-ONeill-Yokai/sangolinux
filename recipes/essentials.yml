@@ -1,7 +1,6 @@
 type: rpm-ostree
 install:
 # Basic environment needs
-  - power-profiles-daemon # For laptop power profile
   - xorg-x11-server-Xwayland # X11 compat
   - xdg-user-dirs # For common home folders / environment variables, such as ~/Downloads, ~/Documents, etc etc
   - polkit # Security / privledge elevation

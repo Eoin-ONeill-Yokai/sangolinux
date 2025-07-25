@@ -7,12 +7,11 @@ system:
   # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
   install:
     - com.github.tchx84.Flatseal # Flatpak permission management
-    - org.mozilla.firefox # Default Web Browser
+    - one.ablaze.floorp # Default Web Browser
     - org.mozilla.Thunderbird # Default Mail Viewer
     - it.mijorus.gearlever # Appimage 'installer' tool
     - org.pipewire.Helvum # Simple pipewire pipe viewing
     - io.mpv.Mpv # Simple video player
-    - it.mijorus.smile # Simple emoji picker
     # - org.gnome.Loupe
     # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
   # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),

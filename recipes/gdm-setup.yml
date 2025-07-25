@@ -1,4 +1,4 @@
 type: systemd
 system:
   enabled:
-    - gdm-boot.service
+    - gdm.service

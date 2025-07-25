@@ -1,6 +1,7 @@
 type: rpm-ostree
 install:
 # The basics
+  - power-profiles-daemon # For laptop power profile
   - kitty # The terminal
   - ddcutil # Monitor on/off control
   - xfce-polkit # User privledge elevation

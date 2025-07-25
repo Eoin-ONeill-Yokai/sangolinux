@@ -96,7 +96,6 @@ install:
   - plasma-thunderbolt
   - plasma-vault
   - plasma-welcome
-  - konsole
   - kmenuedit
   - kwrite
   - kinfocenter
