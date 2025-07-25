@@ -1,0 +1,95 @@
+type: rpm-ostree
+uninstall:
+  - plasma-desktop
+  - plasma-workspace
+  - plasma-workspace-wallpapers
+
+#  - sddm-wayland-plasma
+  - kwin
+
+  # Themes
+  - breeze-icon-theme
+  - plasma-breeze
+
+# Automatic bug reports, security and error handling
+  - firewall-config
+  - kaccounts-integration-qt6
+  - kaccounts-providers
+  - kde-inotify-survey
+  - kdebugsettings
+  - kdialog
+  - kdnssd # DNS 
+  - ksshaskpass # Ask for ssh key password
+  - kwalletmanager5 # Password management
+  - pam-kwallet
+  - pinentry-qt
+  - polkit-kde
+  - plasma-nm # Network manager interface
+  - plasma-nm-l2tp # .. And additional extensions
+  - plasma-nm-openconnect
+  - plasma-nm-openswan
+  - plasma-nm-openvpn
+  - plasma-nm-pptp
+  - plasma-nm-vpnc
+  - signon-kwallet-extension
+  - systemd-oomd-defaults
+
+  # Shared application memory needs
+  - akonadi-server
+  - akonadi-server-mysql
+
+  # File management
+  - dolphin
+  - filelight
+  - ark # Archive manager
+  - ffmpegthumbs
+  - udisks2
+  - kde-partitionmanager
+  - kdegraphics-thumbnailers
+  - kdenetwork-filesharing
+  - kf6-baloo-file
+  - kfind
+  - kio-admin
+  - kio-gdrive
+  - samba-usershares
+  - spectacle
+  
+  # Utility and Drivers
+  - audiocd-kio
+  - bluedevil
+  - cups-pk-helper
+  - colord-kde
+  - flatpak-kcm # Flatpak permission management
+  - kde-connect
+  - kde-settings-pulseaudio
+  - kcharselect
+  - krdp #Remote display protocol
+  - krfb #Ditto
+  - kscreen 
+  - kscreenlocker
+  - libappindicator-gtk3
+  - phonon-qt6-backend-vlc
+  - vlc-plugin-gstreamer
+  - xwaylandvideobridge
+
+  # Others
+  - plasma-discover
+  - plasma-discover-notifier
+  - plasma-pk-updates
+  - plasma-disks
+  - plasma-drkonqi
+  - plasma-pa
+  - plasma-print-manager
+  - plasma-systemmonitor
+  - plasma-thunderbolt
+  - plasma-vault
+  - plasma-welcome
+  - kmenuedit
+  - kwrite
+  - kinfocenter
+  - kjournald
+
+  - kdeplasma-addons
+  - kwebkitpart
+  - khelpcenter
+  - plasma-desktop-doc
