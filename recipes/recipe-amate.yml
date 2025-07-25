@@ -13,6 +13,10 @@ modules:
   - from-file: sddm-setup.yml
   - from-file: shared-flatpaks.yml
 
+  - type: rpm-ostree
+    install: 
+      - papirus-icon-theme
+
   - type: files
     files:
       - source: system/etc
