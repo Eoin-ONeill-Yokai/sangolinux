@@ -5,7 +5,6 @@ modules:
   
   - type: script
     scripts:
-      - install_sddm_simple_theme.sh
       - install_kde_catpuccin.sh
 
   - type: rpm-ostree
