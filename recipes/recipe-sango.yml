@@ -13,13 +13,14 @@ modules:
   - from-file: kde-uninstall.yml
   - from-file: sddm-setup.yml
   
-  - from-file: essentials.yml
   - from-file: xorg-compat.yml # TODO: Determine efficacy. 
 
   - from-file: budgie-basics.yml
   - from-file: budgie-flatpaks.yml
   - from-file: shared-flatpaks.yml
 
+  - from-file: essentials-themes.yml
+  
   - type: files
     files:
       - source: system/etc
