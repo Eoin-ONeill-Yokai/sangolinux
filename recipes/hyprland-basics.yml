@@ -1,7 +1,38 @@
 type: rpm-ostree
 install:
-# The basics
+# Basic environment needs
+  - xorg-x11-server-Xwayland # X11 compat
   - power-profiles-daemon # For laptop power profile
+  - xdg-user-dirs # For common home folders / environment variables, such as ~/Downloads, ~/Documents, etc etc
+  - polkit # Security / privledge elevation
+  - dbus-daemon
+  - dbus-tools # Interaction with dbus daemon
+  - vulkan-tools # Basic vulkan testing tools
+
+# CLI Utils
+  - bat # A better cat
+  - helix # A different text editor, vim substitute. Invoke `hx`.
+  - tmux
+  - toolbox
+  
+# Sound
+  - wireplumber
+  - pipewire
+  - pamixer
+  - pulseaudio-utils
+
+# Networking
+  - NetworkManager-openvpn
+  - NetworkManager-openconnect
+
+# Bluetooth
+  - bluez
+  - bluez-tools
+
+# Extra utilities
+  - gnome-disk-utility
+
+# The basics
   - kitty # The terminal
   - ddcutil # Monitor on/off control
   - xfce-polkit # User privledge elevation
