@@ -1,15 +1,7 @@
 modules:
-  - type: rpm-ostree
-    install:
-      - git
-  
   - type: script
     scripts:
       - install_kde_catppuccin.sh
-
-  - type: rpm-ostree
-    remove:
-      - git
 
   - type: rpm-ostree
     install:
