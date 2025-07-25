@@ -19,8 +19,8 @@ modules:
   - from-file: budgie-flatpaks.yml
   - from-file: shared-flatpaks.yml
 
-  - from-file: essentials-themes.yml
-  
+  - from-file: essential-themes.yml
+
   - type: files
     files:
       - source: system/etc

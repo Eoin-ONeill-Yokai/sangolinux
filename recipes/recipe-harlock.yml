@@ -12,10 +12,9 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - from-file: sddm-basics.yml
   - from-file: sddm-setup.yml
-  
+
   - from-file: hyprland-basics.yml
   - from-file: shared-flatpaks.yml
-  - from-file: essential-themes.yml
 
   - type: files
     files:
