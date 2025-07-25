@@ -9,7 +9,7 @@ modules:
       - install_kde_catpuccin.sh
 
   - type: rpm-ostree
-    uninstall:
+    remove:
       - git
 
   - type: rpm-ostree

@@ -1,5 +1,5 @@
 type: rpm-ostree
-uninstall:
+remove:
   - plasma-desktop
   - plasma-workspace
   - plasma-workspace-wallpapers
