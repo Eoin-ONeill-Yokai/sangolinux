@@ -12,13 +12,10 @@ remove:
   - plasma-breeze
 
 # Automatic bug reports, security and error handling
-  - firewall-config
   - kaccounts-integration-qt6
   - kaccounts-providers
-  - kde-inotify-survey
   - kdebugsettings
   - kdialog
-  - kdnssd # DNS 
   - ksshaskpass # Ask for ssh key password
   - kwalletmanager5 # Password management
   - pam-kwallet
