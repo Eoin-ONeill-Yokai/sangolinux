@@ -57,7 +57,6 @@ remove:
   # Utility and Drivers
   - audiocd-kio
   - bluedevil
-  - cups-pk-helper
   - colord-kde
   - flatpak-kcm # Flatpak permission management
   - kde-connect
