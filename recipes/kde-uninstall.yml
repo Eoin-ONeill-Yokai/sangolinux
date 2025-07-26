@@ -58,9 +58,6 @@ remove:
   - flatpak-kcm # Flatpak permission management
   - kde-connect
   - kde-settings-pulseaudio
-  - kcharselect
-  - krdp #Remote display protocol
-  - krfb #Ditto
   - kscreen 
   - kscreenlocker
   - libappindicator-gtk3
