@@ -83,6 +83,5 @@ remove:
   - kjournald
 
   - kdeplasma-addons
-  - kwebkitpart
   - khelpcenter
   - plasma-desktop-doc
