@@ -53,7 +53,6 @@ remove:
   - plasma-nm-openvpn	
   - plasma-nm-vpnc
   - plasma-pa
-  - plasma-print-manager
   - plasma-systemmonitor
   - plasma-thunderbolt
   - plasma-vault	
