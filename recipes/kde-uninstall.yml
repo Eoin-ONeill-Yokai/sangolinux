@@ -1,80 +1,68 @@
 type: rpm-ostree
 remove:
-  - plasma-desktop
-  - plasma-workspace
-  - plasma-workspace-wallpapers
-
-#  - sddm-wayland-plasma
-  - kwin
-
-  # Themes
-  - breeze-icon-theme
-  - plasma-breeze
-
-# Automatic bug reports, security and error handling
-  - kaccounts-integration-qt6
-  - kaccounts-providers
-  - kdebugsettings
-  - kdialog
-  - ksshaskpass # Ask for ssh key password
-  - kwalletmanager5 # Password management
-  - pam-kwallet
-  - pinentry-qt
-  - polkit-kde
-  - plasma-nm # Network manager interface
-  - signon-kwallet-extension
-  - systemd-oomd-defaults
-
-  # Shared application memory needs
   - akonadi-server
   - akonadi-server-mysql
-
-  # File management
-  - dolphin
-  - filelight
-  - ark # Archive manager
-  - ffmpegthumbs
-  - udisks2
-  - kde-partitionmanager
-  - kdegraphics-thumbnailers
-  - kdenetwork-filesharing
-  - kf6-baloo-file
-  - kfind
-  - kio-admin
-  - kio-gdrive
-  - samba-usershares
-  - spectacle
-  
-  # Utility and Drivers
   - audiocd-kio
   - bluedevil
+  - breeze-icon-theme
   - colord-kde
-  - flatpak-kcm # Flatpak permission management
+  - dolphin
+  - ffmpegthumbs
+  - filelight
+  - firewall-config
+  - flatpak-kcm
+  - fprintd-pam
+  - kaccounts-integration-qt6
+  - kaccounts-providers
+  - kcharselect
   - kde-connect
+  - kde-gtk-config
+  - kde-inotify-survey
+  - kde-partitionmanager
   - kde-settings-pulseaudio
-  - kscreen 
+  - kdebugsettings
+  - kdegraphics-thumbnailers
+  - kdenetwork-filesharing
+  - kdeplasma-addons
+  - kdialog
+  - kdnssd
+  - kf6-baloo-file
+  - kfind
+  - khelpcenter
+  - kinfocenter
+  - kio-admin
+  - kio-gdrive
+  - kjournald
+  - kmenuedit
+  - konsole
+  - krdp
+  - krfb
+  - kscreen
   - kscreenlocker
-  - libappindicator-gtk3
+  - kwalletmanager5
+  - kwin
+  - kwrite	
+  - pam-kwallet
   - phonon-qt6-backend-vlc
-  - vlc-plugin-gstreamer
-  - xwaylandvideobridge
-
-  # Others
+  - pinentry-qt
+  - plasma-breeze
+  - plasma-desktop
+  - plasma-desktop-doc
   - plasma-discover
   - plasma-discover-notifier
   - plasma-disks
   - plasma-drkonqi
+  - plasma-nm
+  - plasma-nm-openconnect
+  - plasma-nm-openvpn	
+  - plasma-nm-vpnc
   - plasma-pa
   - plasma-print-manager
   - plasma-systemmonitor
   - plasma-thunderbolt
-  - plasma-vault
+  - plasma-vault	
   - plasma-welcome
-  - kmenuedit
-  - kwrite
-  - kinfocenter
-  - kjournald
-
-  - kdeplasma-addons
-  - khelpcenter
-  - plasma-desktop-doc
+  - plasma-workspace
+  - plasma-workspace-wallpapers
+  - polkit-kde
+  - sddm-wayland-plasma
