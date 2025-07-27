@@ -62,7 +62,6 @@ remove:
   # Others
   - plasma-discover
   - plasma-discover-notifier
-  - plasma-pk-updates
   - plasma-disks
   - plasma-drkonqi
   - plasma-pa
