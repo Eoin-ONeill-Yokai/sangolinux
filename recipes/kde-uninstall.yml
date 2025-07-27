@@ -22,12 +22,6 @@ remove:
   - pinentry-qt
   - polkit-kde
   - plasma-nm # Network manager interface
-  - plasma-nm-l2tp # .. And additional extensions
-  - plasma-nm-openconnect
-  - plasma-nm-openswan
-  - plasma-nm-openvpn
-  - plasma-nm-pptp
-  - plasma-nm-vpnc
   - signon-kwallet-extension
   - systemd-oomd-defaults
 
