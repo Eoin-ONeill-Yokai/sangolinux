@@ -4,11 +4,13 @@ modules:
       enabled:
         - sddm.service
 
+  # SDDM-Simple dependencies
   - type: rpm-ostree
     install:
       - qt5-qtquickcontrols2
       - qt5-qtgraphicaleffects
       - qt5-qtsvg
+      - qt5-qtmultimedia
 
   - type: script
     scripts:
