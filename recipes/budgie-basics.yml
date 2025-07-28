@@ -1,5 +1,12 @@
 type: rpm-ostree
 install:
+  - xorg-x11-server-Xwayland # X11 compat
+  - xdg-user-dirs # For common home folders / environment variables, such as ~/Downloads, ~/Documents, etc etc
+  - polkit # Security / privledge elevation
+  - dbus-daemon
+  - dbus-tools # Interaction with dbus daemon
+  - vulkan-tools # Basic vulkan testing tools
+
   - budgie-backgrounds
   - budgie-control-center
   - budgie-desktop

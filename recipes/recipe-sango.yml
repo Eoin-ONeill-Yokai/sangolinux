@@ -4,13 +4,15 @@ name: sango
 description: A desktop environment familiar to new users. 
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/aurora-dx
+base-image: ghcr.io/ublue-os/base-main
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: kde-uninstall.yml
+  - from-file: mesa-basics.yml
+
+  - from-file: sddm-basics.yml
   - from-file: sddm-setup.yml
   
   - from-file: xorg-compat.yml # TODO: Determine efficacy. 
@@ -18,8 +20,6 @@ modules:
   - from-file: budgie-basics.yml
   - from-file: budgie-flatpaks.yml
   - from-file: shared-flatpaks.yml
-
-  - from-file: essential-themes.yml
 
   - type: files
     files:

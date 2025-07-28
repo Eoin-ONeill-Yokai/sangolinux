@@ -18,6 +18,8 @@ modules:
     - kde-gtk-config
     - kde-inotify-survey
     - kde-partitionmanager
+    - kde-settings
+    - kf6-kiconthemes
     - kde-settings-pulseaudio
     - kdebugsettings
     - kdegraphics-thumbnailers
@@ -42,6 +44,41 @@ modules:
     - pam-kwallet
     - phonon-qt6-backend-vlc
     - pinentry-qt
+    - plasma-integration
+    - dolphin-plugins
+    - kf6-purpose
+    - kde-connect-libs
+    - spectacle
+    - audiocd-kio-doc
+    - kjournald-libs
+    - kwin-libs
+    - sddm-breeze
+    - kf6-breeze-icons
+    - kdeconnectd
+    - kwin-common
+    - plasma-print-manager-libs
+    - plasma-print-manager
+    - plasma-lookandfeel-fedora
+    - plasma-browser-integration
+    - plasma-discover-flatpak
+    - plasma-breeze-qt5
+    - kf5-kconfig-core
+    - ark-libs
+    - ark
+    - kdelibs
+    - qqc2-breeze-style
+    - dolphin-libs
+    - xdg-desktop-portal-kde
+    - kde-settings-plasma
+    - kde-runtime-libs
+    - kdelibs-webkit
+    - plasma-integration-qt5
+    - plasma-workspace-libs
+    - kate-libs
+    - kate-plugins
+    - plasma-discover-libs
+    - kdelibs-ktexteditor
+    - kactivities-libs
     - plasma-breeze
     - plasma-desktop
     - plasma-desktop-doc

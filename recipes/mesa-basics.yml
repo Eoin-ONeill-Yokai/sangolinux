@@ -1,0 +1,4 @@
+type: rpm-ostree
+install:
+  - mesa-vulkan-drivers
+  - mesa-dri-drivers
