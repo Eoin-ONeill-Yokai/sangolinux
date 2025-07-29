@@ -25,7 +25,7 @@ EOF
 replace_color () {
     local title=$1
     local value=$2
-    sed -i 's/^'${title}'=.*$/${title}="'${value}'"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
+    sed -i 's/^'${title}'=.*$/'${title}'="'${value}'"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
 }
 
 
@@ -61,6 +61,6 @@ replace_color "HighlightBorderColor" "#414559"
 
 sed -i 's/^BlurRadius=.*$/BlurRadius="0"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
 sed -i 's/^FormPosition=.*$/FormPosition="center"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
-
+sed -i 's/^Background=.*$/Background="Backgrounds\/earth_lights_environment_globe-cc0.jpg"/g' /usr/share/sddm/themes/simple-sddm-2/theme.conf
 
 touch /usr/share/sddm/themes_installed.flag
