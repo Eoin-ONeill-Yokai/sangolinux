@@ -12,7 +12,7 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules: 
   - from-file: sddm-setup.yml
   - from-file: shared-flatpaks.yml
-
+  
   - from-file: essential-themes.yml
 
   - type: files
