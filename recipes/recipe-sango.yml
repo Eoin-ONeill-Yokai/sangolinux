@@ -10,10 +10,11 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: mesa-basics.yml
+
   - from-file: sddm-basics.yml
   - from-file: sddm-setup.yml
   
-  - from-file: essentials.yml
   - from-file: xorg-compat.yml # TODO: Determine efficacy. 
 
   - from-file: budgie-basics.yml

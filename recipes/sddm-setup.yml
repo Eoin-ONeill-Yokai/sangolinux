@@ -4,6 +4,16 @@ modules:
       enabled:
         - sddm.service
 
+  # SDDM-Simple dependencies
+  - type: rpm-ostree
+    install:
+      - qt5-qtquickcontrols2
+      - qt5-qtgraphicaleffects
+      - qt5-qtsvg
+      - qt6-qtsvg
+      - qt5-qtmultimedia
+      - qt6-qtmultimedia
+
   - type: script
     scripts:
       - install_sddm_simple_theme.sh

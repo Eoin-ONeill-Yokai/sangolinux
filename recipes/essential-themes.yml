@@ -1,0 +1,22 @@
+modules:
+  - type: script
+    scripts:
+      - install_kde_catppuccin.sh
+
+  - type: rpm-ostree
+    install:
+      # Design
+      - materia-gtk-theme
+      - materia-kde
+      - gnome-themes-extra
+      
+      # Icons
+      - gnome-icon-theme
+      - paper-icon-theme
+      - breeze-icon-theme 
+      - papirus-icon-theme
+
+      # Fonts
+      - abattis-cantarell-fonts # Cantarell font
+      - fontawesome-fonts-all # All other fonts
+      - google-noto-emoji-fonts # For basic emoji

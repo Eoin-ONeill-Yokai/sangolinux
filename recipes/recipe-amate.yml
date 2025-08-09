@@ -9,13 +9,11 @@ image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
-modules:  
+modules: 
   - from-file: sddm-setup.yml
   - from-file: shared-flatpaks.yml
-
-  - type: rpm-ostree
-    install: 
-      - papirus-icon-theme
+  
+  - from-file: essential-themes.yml
 
   - type: files
     files:
@@ -31,3 +29,5 @@ modules:
         destination: /usr
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
+
+

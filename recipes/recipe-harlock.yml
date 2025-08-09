@@ -13,12 +13,6 @@ modules:
   - from-file: sddm-basics.yml
   - from-file: sddm-setup.yml
 
-  - type: systemd
-    system:
-      enabled:
-        - sddm-boot.service
-  
-  - from-file: essentials.yml
   - from-file: hyprland-basics.yml
   - from-file: shared-flatpaks.yml
 
