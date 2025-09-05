@@ -12,7 +12,7 @@ if [ -x "$(command -v gsettings)" ]; then
 fi
 
 if [ -x "$(command -v dbus-send)" ]; then
-    dbus-send --session --dest=org.kde.GtkConfig --type=method_call /GtkConfig org.kde.GtkConfig.setGtkTheme 'string:Orchis-Sango'
+    (dbus-send --session --dest=org.kde.GtkConfig --type=method_call /GtkConfig org.kde.GtkConfig.setGtkTheme 'string:Orchis-Sango') || true
 fi
 
 mkdir -p /usr/share/gtk
