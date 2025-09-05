@@ -4,7 +4,7 @@ set -x #echo on
 git clone https://github.com/Eoin-ONeill-Yokai/Orchis-theme.git ./orchis
 cd ./orchis
 
-./install.sh -c dark -t purple -l --tweaks solid --name Orchis-Sango
+./install.sh -c dark -t purple --tweaks solid --name Orchis-Sango
 
 if [ -x "$(command -v gsettings)" ]; then 
     gsettings set org.gnome.desktop.interface gtk-theme Orchis-Sango
