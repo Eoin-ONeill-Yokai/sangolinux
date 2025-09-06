@@ -1,7 +1,8 @@
 modules:
   - type: script
     scripts:
-      - install_kde_catppuccin.sh
+      - install_orchis_dark_sango.sh
+    #  - install_kde_catppuccin.sh
 
   - type: rpm-ostree
     install:
@@ -20,3 +21,7 @@ modules:
       - abattis-cantarell-fonts # Cantarell font
       - fontawesome-fonts-all # All other fonts
       - google-noto-emoji-fonts # For basic emoji
+
+  - type: containerfile
+    snippets:
+      - ENV GTK_THEME=Orchis-Sango-Purple-Dark:dark

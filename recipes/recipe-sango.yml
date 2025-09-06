@@ -21,7 +21,7 @@ modules:
   - from-file: budgie-flatpaks.yml
   - from-file: shared-flatpaks.yml
 
-  - from-file: gtk-shared.yml
+  - from-file: essential-themes.yml
 
   - type: files
     files:
