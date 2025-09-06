@@ -4,10 +4,12 @@ set -x #echo on
 git clone https://github.com/Eoin-ONeill-Yokai/Orchis-theme.git ./orchis
 cd ./orchis
 
+dnf install sassc
+
 ./install.sh -c dark -t purple --tweaks solid --name Orchis-Sango
 
 if [ -x "$(command -v gsettings)" ]; then 
-    gsettings set org.gnome.desktop.interface gtk-theme Orchis-Sango
+    gsettings set org.gnome.desktop.interface gtk-theme Orchis-Sango-Purple-Dark
     gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 fi
 
@@ -18,3 +20,4 @@ fi
 mkdir -p /usr/share/gtk
 touch /usr/share/gtk/orchis-sango-installed.flag
 
+dnf uninstall sassc
