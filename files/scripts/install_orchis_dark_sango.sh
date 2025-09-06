@@ -20,4 +20,4 @@ fi
 mkdir -p /usr/share/gtk
 touch /usr/share/gtk/orchis-sango-installed.flag
 
-dnf uninstall -y sassc
+dnf remove -y sassc
