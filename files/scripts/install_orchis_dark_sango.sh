@@ -4,7 +4,7 @@ set -x #echo on
 git clone https://github.com/Eoin-ONeill-Yokai/Orchis-theme.git ./orchis
 cd ./orchis
 
-dnf install sassc
+dnf install -y sassc
 
 ./install.sh -c dark -t purple --tweaks solid --name Orchis-Sango
 
@@ -20,4 +20,4 @@ fi
 mkdir -p /usr/share/gtk
 touch /usr/share/gtk/orchis-sango-installed.flag
 
-dnf uninstall sassc
+dnf uninstall -y sassc
