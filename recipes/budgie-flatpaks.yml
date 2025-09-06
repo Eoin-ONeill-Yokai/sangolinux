@@ -4,3 +4,4 @@ system:
   install:
     - app.devsuite.Ptyxis
     - io.missioncenter.MissionCenter
+    - io.github.kolunmi.Bazaar

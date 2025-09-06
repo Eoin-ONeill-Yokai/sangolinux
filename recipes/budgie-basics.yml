@@ -15,7 +15,6 @@ install:
   - budgie-screensaver
   - dconf #gsettings
   - gnome-settings-daemon
-  - gnome-software
 
   - nautilus
   - nautilus-extensions
