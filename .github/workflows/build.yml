@@ -25,6 +25,7 @@ jobs:
           - recipe-harlock.yml
           - recipe-sango.yml
           - recipe-amate.yml
+          - recipe-maetel.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
