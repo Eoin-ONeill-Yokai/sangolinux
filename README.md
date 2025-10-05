@@ -6,9 +6,11 @@
 
 Linux images based on the [Blue Build](https://blue-build.org/) project. Uses [UBlue Main](https://universal-blue.org/) as a base image but will come with presets that I think are sensible for various desktop environments.
 
-- `harlock:latest` is a simple tiling desktop environment using Hyprland. Depending on how things change in the future, this might migrate to Sway w/ animation plugins. It should also come with `flavours` base16 theming options and configurations.
-- `sango:latest` uses a Budgie desktop environment that's similar to "classic" windows paradigms. Mostly using this for my personal development goals as I would like to contribute more design ideas to this project in the future.
-- `maetel:latest` uses a Gnome 3 desktop environment that's similar to MacOS. This one should be *really* simple gnome environment with some extra utilities.
+- `sango:latest` A Budgie desktop environment that's similar to "classic" windows paradigms.
+- `maetel:latest` A Cosmic DE based environment with flexible user configuration and nice aesthetics. 
+- `amate:latest` A soft-branch of `aurora` featuring a KDE desktop environment. I wouldn't recommend this over aurora yet, but it's here.
+- `harlock:latest` Features a simple tiling desktop environment using Hyprland. Depending on how things change in the future, this might migrate to Sway w/ animation plugins. It should also come with `flavours` base16 theming options and configurations.
+
 
 ### Design Goals
 - Utility scripts and services that help keep clean user folders or other file naming goals.
