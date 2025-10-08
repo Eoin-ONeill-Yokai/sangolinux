@@ -1,0 +1,13 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - rust 
+      - cargo 
+      - uutils-coreutils
+      - helix
+      - fd-find
+      - ripgrep
+      - fzf
+  - type: script
+    scripts:
+      - setup_rust_coreutils.sh

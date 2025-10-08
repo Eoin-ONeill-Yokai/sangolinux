@@ -19,6 +19,8 @@ modules:
 
   - from-file: essential-themes.yml
 
+  - from-file: rust-core-utils.yml
+
   - type: files
     files:
       - source: system/etc
