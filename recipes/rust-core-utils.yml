@@ -9,6 +9,3 @@ modules:
       - ripgrep
       - fzf
       - zoxide
-  - type: script
-    scripts:
-      - setup_rust_coreutils.sh

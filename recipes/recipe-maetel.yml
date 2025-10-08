@@ -25,7 +25,7 @@ modules:
     files:
       - source: system/etc
         destination: /etc
-      - source: system/sango # copies config/files/usr into your image's /usr.
+      - source: system/maetel # copies config/files/usr into your image's /usr.
                   # put configuration files you want in /etc/ on a booted system 
                   # in /usr/etc/ in the image. read more in files module reference.
         destination: /
