@@ -36,5 +36,11 @@ modules:
       - source: system/usr
         destination: /usr
 
+  - type: os-release
+    properties:
+      ID: fedora_sango
+      Name: Sango
+      PRETTY_NAME: Sango [Fedora] Image
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
