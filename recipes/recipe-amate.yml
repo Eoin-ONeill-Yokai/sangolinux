@@ -9,7 +9,7 @@ image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
-modules: 
+modules:
   - from-file: sddm-setup.yml
   - from-file: shared-flatpaks.yml
   
@@ -27,6 +27,13 @@ modules:
         destination: /usr/share/sddm/themes/simple-sddm-2/Backgrounds/earth_lights_environment_globe-cc0.jpg
       - source: system/usr
         destination: /usr
+
+  - type: os-release
+    properties:
+      ID: aurora_amate
+      Name: AuroraAmate
+      PRETTY_NAME: Aurora Amate [Fedora] Image
+
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 

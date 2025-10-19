@@ -34,5 +34,12 @@ modules:
       - source: system/usr
         destination: /usr
 
+    
+  - type: os-release
+    properties:
+      ID: fedora_maetel
+      Name: Maetel
+      PRETTY_NAME: Maetel [Fedora] Image
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
