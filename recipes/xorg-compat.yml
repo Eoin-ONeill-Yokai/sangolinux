@@ -5,5 +5,6 @@ install:
   - xorg-x11-drv-amdgpu
   - xorg-x11-server-common
   - xorg-x11-server-Xorg
+  - xorg-x11-server-Xwayland
   - xorg-x11-xauth
   - xorg-x11-xinit
