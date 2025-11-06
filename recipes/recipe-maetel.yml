@@ -41,9 +41,9 @@ modules:
       Name: Maetel
       PRETTY_NAME: Maetel [Fedora] Image
   
-  - type: containerfile
-    snippets:
-      - RUN sed -e 's/PRETTY_NAME=.*/PRETTY_NAME="Maetel [Fedora] '$( date +%y.%m.%d )'"/' /etc/os-release > /etc/os-release
+  # - type: containerfile
+  #   snippets:
+  #     - RUN sed -e 's/PRETTY_NAME=.*/PRETTY_NAME="Maetel [Fedora] '$( date +%y.%m.%d )'"/' /etc/os-release > /etc/os-release
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
