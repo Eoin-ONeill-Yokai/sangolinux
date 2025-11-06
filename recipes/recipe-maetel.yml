@@ -43,7 +43,7 @@ modules:
   
   - type: containerfile
     snippets:
-      - RUN sed -e 's/PRETTY_NAME=.*/PRETTY_NAME="Maetel [Fedora] '$( date +%y%m%d )'"/' /etc/os-release > /etc/os-release
+      - RUN sed 's,PRETTY_NAME=.*,PRETTY_NAME="Maetel '$( date +%y-%m-%d )'",' /etc/os-release | tee /etc/os-release
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
