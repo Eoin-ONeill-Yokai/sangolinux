@@ -19,7 +19,7 @@ modules:
 
   - from-file: essential-themes.yml
 
-  - from-file: rust-core-utils.yml
+  - from-file: rust-core-and-utils.yml
 
   - type: files
     files:
@@ -34,12 +34,16 @@ modules:
       - source: system/usr
         destination: /usr
 
-    
   - type: os-release
     properties:
       ID: fedora_maetel
+      ID_LIKE: fedora
       Name: Maetel
       PRETTY_NAME: Maetel [Fedora] Image
+  
+  - type: containerfile
+    snippets:
+      - RUN sed -e 's/PRETTY_NAME=.*/PRETTY_NAME="Maetel [Fedora] '$( date +%y.%m.%d )'"/' /etc/os-release > /etc/os-release
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 

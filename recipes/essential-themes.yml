@@ -7,8 +7,6 @@ modules:
   - type: rpm-ostree
     install:
       # Design
-      - materia-gtk-theme
-      - materia-kde
       - gnome-themes-extra
       
       # Icons

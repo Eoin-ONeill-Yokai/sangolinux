@@ -4,18 +4,35 @@ name: tetsuro
 description: Core distribution. Same base packages and used as a base for other images. 
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/ublue-os/bluefin-dx
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: rpm-ostree
+    install:
+      - git
+      - git-lfs
+    
+  - type: default-flatpaks
+    configurations:
+      - scope: user
+        repo:
+          # you can override the title to make inclusion of both system and user repos clearer
+          title: Flathub (user)
+      - notify: true
+        scope: system
+        repo:
+          title: Flathub (system)
+        install: # system flatpaks we want all users to have and not remove
+          - it.mijorus.gearlever
+          - net.cozic.joplin_desktop
+
   - type: files
     files:
-      - usr: /testsuro/usr 
-                  # copies config/files/usr into your image's /usr.
-                  # put configuration files you want in /etc/ on a booted system 
-                  # in /usr/etc/ in the image. read more in files module reference.
+    - source: system/tetsuro
+      destination: /
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
