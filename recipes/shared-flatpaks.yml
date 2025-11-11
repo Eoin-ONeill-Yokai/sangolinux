@@ -8,10 +8,10 @@ system:
   install:
     - com.github.tchx84.Flatseal # Flatpak permission management
     - one.ablaze.floorp # Default Web Browser
-    - org.mozilla.Thunderbird # Default Mail Viewer
     - it.mijorus.gearlever # Appimage 'installer' tool
     - org.pipewire.Helvum # Simple pipewire pipe viewing
     - io.mpv.Mpv # Simple video player
+    - org.fooyin.fooyin # Foobar-like media player
     # - org.gnome.Loupe
     # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
   # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),

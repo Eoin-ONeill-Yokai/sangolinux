@@ -1,0 +1,90 @@
+# image will be published to ghcr.io/<user>/<name>
+name: nono
+# description will be included in the image's metadata
+description: A desktop environment familiar to new users. 
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/eoin-oneill-yokai/bazzite-niri
+image-version: latest # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - from-file: shared-flatpaks.yml
+
+  - type: default-flatpaks
+    configurations:
+      - scope: user
+        repo:
+          # you can override the title to make inclusion of both system and user repos clearer
+          title: Flathub (user)
+      - notify: true
+        scope: system
+        repo:
+          title: Flathub (system)
+        install: # system flatpaks we want all users to have and not remove
+          - app.drey.Warp
+          - camp.nook.nookdesktop
+          - chat.revolt.RevoltDesktop
+          - com.discordapp.Discord
+          - com.etlegacy.ETLegacy
+          - com.github.alexkdeveloper.desktop-files-creator
+          - com.github.qarmin.czkawka
+          - com.unicornsonlsd.finamp
+          - com.heroicgameslauncher.hgl
+          - com.jeffser.Pigment
+          - com.obsproject.Studio
+          - com.rafaelmardojai.Blanket
+          - com.usebottles.bottles
+          - dev.geopjr.Collision
+          - im.riot.Riot
+          - io.github.Hexchat
+          - org.tildearrow.furnace
+          - io.github.gaheldev.Millisecond
+          - io.github.mpobaschnig.Vaults
+          - io.github.ronniedroid.concessio
+          - io.github.wartybix.Constrict
+          - io.missioncenter.MissionCenter
+          - io.github.kolunmi.Bazaar
+          - net.codelogistics.webapps
+          - no.mifi.losslesscut
+          - net.cozic.joplin_desktop
+          - net.lutris.Lutris #?
+          - nl.hjdskes.gcolor3
+          - org.fedoraproject.MediaWriter
+          - org.gnome.Calculator
+          - org.gnome.Calendar
+          - org.gnome.Maps
+          - org.gnome.Weather
+          - org.gnome.baobab
+          - org.gnome.eog 
+          - org.gnome.gitlab.cheywood.Pulp
+          - org.gnome.meld
+          - org.signal.Signal
+
+  - type: files
+    files:
+      - source: system/etc
+        destination: /etc
+      - source: system/maetel # copies config/files/usr into your image's /usr.
+                  # put configuration files you want in /etc/ on a booted system 
+                  # in /usr/etc/ in the image. read more in files module reference.
+        destination: /
+      - source: system/graphics/earth_lights_environment_globe-cc0.jpg
+        destination: /usr/share/backgrounds/earth_lights_environment_globe-cc0.jpg
+      - source: system/usr
+        destination: /usr
+
+  - type: os-release
+    properties:
+      ID: fedora_nono
+      ID_LIKE: fedora
+      Name: Nono
+      PRETTY_NAME: Nono [Fedora] Image
+  
+  - type: containerfile
+    snippets:
+      - RUN sed 's,PRETTY_NAME=.*,PRETTY_NAME="Nono '$( date +%y-%m-%d )'",' /etc/os-release | tee /etc/os-release
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+

@@ -1,89 +1,95 @@
-type: rpm-ostree
+type: dnf
+repos:
+  cleanup: true
+  copr:
+    enable:
+      - solopasha/hyprland    
 install:
+  packages:
 # Basic environment needs
-  - xorg-x11-server-Xwayland # X11 compat
-  - power-profiles-daemon # For laptop power profile
-  - xdg-user-dirs # For common home folders / environment variables, such as ~/Downloads, ~/Documents, etc etc
-  - polkit # Security / privledge elevation
-  - dbus-daemon
-  - dbus-tools # Interaction with dbus daemon
-  - vulkan-tools # Basic vulkan testing tools
+    - xorg-x11-server-Xwayland # X11 compat
+    - power-profiles-daemon # For laptop power profile
+    - xdg-user-dirs # For common home folders / environment variables, such as ~/Downloads, ~/Documents, etc etc
+    - polkit # Security / privledge elevation
+    - dbus-daemon
+    - dbus-tools # Interaction with dbus daemon
+    - vulkan-tools # Basic vulkan testing tools
 
 # CLI Utils
-  - bat # A better cat
-  - helix # A different text editor, vim substitute. Invoke `hx`.
-  - tmux
-  - toolbox
-  
+    - bat # A better cat
+    - helix # A different text editor, vim substitute. Invoke `hx`.
+    - tmux
+    - toolbox
+    
 # Sound
-  - wireplumber
-  - pipewire
-  - pamixer
-  - pulseaudio-utils
+    - wireplumber
+    - pipewire
+    - pamixer
+    - pulseaudio-utils
 
 # Networking
-  - NetworkManager-openvpn
-  - NetworkManager-openconnect
+    - NetworkManager-openvpn
+    - NetworkManager-openconnect
 
 # Bluetooth
-  - bluez
-  - bluez-tools
+    - bluez
+    - bluez-tools
 
 # Extra utilities
-  - gnome-disk-utility
+    - gnome-disk-utility
 
 # The basics
-  - kitty # The terminal
-  - ddcutil # Monitor on/off control
-  - xfce-polkit # User privledge elevation
-  - pavucontrol # Volume control utility
-  - wl-clipboard # For wayland clipboard support
-  - playerctl # Media player control toolkit
-  - vulkan-validation-layers # Validation layer support for development. Might not be necessary?
-  - network-manager-applet # Applet for network manager
-  - blueman # Applet for bluetooth management
+    - kitty # The terminal
+    - ddcutil # Monitor on/off control
+    - xfce-polkit # User privledge elevation
+    - pavucontrol # Volume control utility
+    - wl-clipboard # For wayland clipboard support
+    - playerctl # Media player control toolkit
+    - vulkan-validation-layers # Validation layer support for development. Might not be necessary?
+    - network-manager-applet # Applet for network manager
+    - blueman # Applet for bluetooth management
 
-  # QT for wayland. Probably just a nice-to-have. 
-  - qt5-qtwayland
-  - qt6-qtwayland 
+# QT for wayland. Probably just a nice-to-have. 
+    - qt5-qtwayland
+    - qt6-qtwayland 
 
-  # Gnome settings
-  - dconf
-  - gnome-settings-daemon
+# Gnome settings
+    - dconf
+    - gnome-settings-daemon
 
-  - hyprland # The WM
-  - xdg-desktop-portal-hyprland #Basic xdg desktop portals, needed for flatpak
-  - waybar # Top bar
-#  - hyprpaper # Wallpaper support (TODO missing from newest DNF)
-  - dunst # Notification Daemon
+    - hyprland # The WM
+    - xdg-desktop-portal-hyprland #Basic xdg desktop portals, needed for flatpak
+    - waybar # Top bar
+  #  - hyprpaper # Wallpaper support (TODO missing from newest DNF)
+    - dunst # Notification Daemon
 
 # File and Management Applications
-  - thunar
-  - thunar-archive-plugin  # Thunar built-in archive tools
-  - thunar-volman # Thunar volume management
-  - mousepad # Text editor
-  - xarchiver # Archive viewer
-  - imv # Image viewer
-  - p7zip # Zip util
-  - unrar # Rar util
-  # GIO framework
-  - gvfs-mtp 
-  - gvfs-gphoto2
-  - gvfs-smb
-  - gvfs-nfs
-  - gvfs-fuse
-  - gvfs-archive
-  # Misc
-  - android-tools # Allows fast access to android device. Maybe unnecessary in base?
+    - thunar
+    - thunar-archive-plugin  # Thunar built-in archive tools
+    - thunar-volman # Thunar volume management
+    - mousepad # Text editor
+    - xarchiver # Archive viewer
+    - imv # Image viewer
+    - p7zip # Zip util
+    - unrar # Rar util
+    # GIO framework
+    - gvfs-mtp 
+    - gvfs-gphoto2
+    - gvfs-smb
+    - gvfs-nfs
+    - gvfs-fuse
+    - gvfs-archive
+    # Misc
+    - android-tools # Allows fast access to android device. Maybe unnecessary in base?
 
 # Screenshoting
-  - slurp # Selects a region of the screen for arbitrary use.
-  - grim # Snaps images from a swaywm window context.
+    - slurp # Selects a region of the screen for arbitrary use.
+    - grim # Snaps images from a swaywm window context.
 
 # Display util
-  - wlr-randr # Screen config
-  - swayidle # Idle tracker
-  - brightnessctl # Brigtness control
-  - wlsunset # Sunsetting options
-  - swaylock # Lock screen, consider replacement with hyprlock.
-  - kanshi # For screen disabling / auto locking.
+    - wlr-randr # Screen config
+    - swayidle # Idle tracker
+    - brightnessctl # Brigtness control
+    - wlsunset # Sunsetting options
+    - swaylock # Lock screen, consider replacement with hyprlock.
+    - kanshi # For screen disabling / auto locking.
