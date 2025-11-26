@@ -82,9 +82,9 @@ modules:
       Name: Nono
       PRETTY_NAME: Nono [Fedora] Image
   
-  - type: containerfile
-    snippets:
-      - RUN sed 's,PRETTY_NAME=.*,PRETTY_NAME="Nono '$( date +%y-%m-%d )'",' /etc/os-release | tee /etc/os-release
+  #- type: containerfile
+  #  snippets:
+  #    - RUN sed 's,PRETTY_NAME=.*,PRETTY_NAME="Nono '$( date +%y-%m-%d )'",' /etc/os-release | tee /etc/os-release
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
