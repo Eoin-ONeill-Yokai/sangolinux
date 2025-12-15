@@ -20,6 +20,10 @@ modules:
   - from-file: essential-themes.yml
 
   - from-file: rust-core-and-utils.yml
+  
+  - type: script
+    scripts:
+      - cosmic/install_caffeine.sh
 
   - type: files
     files:
