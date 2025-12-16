@@ -11,7 +11,7 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - from-file: mesa-basics.yml
-  - from-file: xorg-compat.yml # TODO: Determine efficacy. 
+  - from-file: xorg-compat.yml
 
   - from-file: cosmic-basics.yml
   - from-file: cosmic-flatpaks.yml
