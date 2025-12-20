@@ -1,16 +1,15 @@
 modules:
-  - type: dnf
+  - type: rpm-ostree
     install:
-      packages:
-        - rust 
-        - cargo 
-        - uutils-coreutils
-        - helix
-        - fd-find
-        - ripgrep
-        - fzf
-        - bat
-        - zoxide
+      - rust 
+      - cargo 
+      - uutils-coreutils
+      - helix
+      - fd-find
+      - ripgrep
+      - fzf
+      - bat
+      - zoxide
   - type: files
     files:
       - source: system/rust-core-and-utils
