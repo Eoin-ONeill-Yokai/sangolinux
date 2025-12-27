@@ -30,16 +30,17 @@ modules:
       - source: system/usr
         destination: /usr
 
-  - type: containerfile
-    snippets:
-      - RUN mv /etc/os-release /etc/os-release.bak
-      - RUN sed 's,PRETTY_NAME=.*,PRETTY_NAME="Aurora Amate '$( date +%y.%m.%d )'",' /etc/os-release.bak | tee /etc/os-release
-      - RUN rm /etc/os-release.bak
-
   - type: os-release
     properties:
       ID: aurora_amate
       Name: AuroraAmate
+      PRETTY_NAME: Aurora Amate [Fedora] Image
+
+  # HACK: Bypass aurora's use of /usr/etc/profile overwriting zoxide configuration by adding manual source parsing last.
+  # Remove once aurora rewrites it's command line initialization task, remove this. See issue https://github.com/ublue-os/aurora/issues/1518
+  - type: containerfile
+    snippets:
+      - RUN echo ". \"/etc/profile.d/zrgn_010_rust_alias.sh\"" >> /etc/profile
   
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
