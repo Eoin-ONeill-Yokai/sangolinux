@@ -42,7 +42,7 @@ modules:
   # Remove once aurora rewrites it's command line initialization task, remove this. See issue https://github.com/ublue-os/aurora/issues/1518
   - type: containerfile
     snippets:
-      - RUN echo ". \"/etc/profile.d/zrgn_010_rust_alias.sh\"" >> /etc/profile
+      - RUN echo ". \"/etc/profile.d/zrgn_010_rust_alias.sh\"" >> /etc/bashrc
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
