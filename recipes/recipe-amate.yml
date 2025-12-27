@@ -36,12 +36,6 @@ modules:
       Name: AuroraAmate
       PRETTY_NAME: Aurora Amate [Fedora] Image
 
-  # HACK: Bypass aurora's use of /usr/etc/profile overwriting zoxide configuration by adding manual source parsing last.
-  # Remove once aurora rewrites it's command line initialization task, remove this. See issue https://github.com/ublue-os/aurora/issues/1518
-  - type: containerfile
-    snippets:
-      - RUN echo ". \"/etc/profile.d/zrgn_010_rust_alias.sh\"" >> /etc/profile 
-
   - type: containerfile
     snippets:
       - RUN mv /etc/os-release /etc/os-release.bak
