@@ -38,18 +38,17 @@ modules:
       - source: system/usr
         destination: /usr
 
-  - type: os-release
-    properties:
-      ID: fedora_maetel
-      ID_LIKE: fedora
-      Name: Maetel
-      PRETTY_NAME: Maetel [Fedora] Image
-  
   - type: containerfile
     snippets:
       - RUN mv /etc/os-release /etc/os-release.bak
       - RUN sed 's,PRETTY_NAME=.*,PRETTY_NAME="Maetel '$( date +%y.%m.%d )'",' /etc/os-release.bak | tee /etc/os-release
       - RUN rm /etc/os-release.bak
+
+  - type: os-release
+    properties:
+      ID: fedora_maetel
+      ID_LIKE: fedora
+      NAME: Maetel [Fedora] 
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
