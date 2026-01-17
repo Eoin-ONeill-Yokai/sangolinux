@@ -24,6 +24,7 @@ modules:
   - type: script
     scripts:
       - cosmic/install_caffeine.sh
+      - install_opentabletdriver.sh
 
   - type: files
     files:
@@ -51,4 +52,3 @@ modules:
       NAME: Maetel [Fedora] 
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
