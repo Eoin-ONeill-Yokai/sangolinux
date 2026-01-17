@@ -24,8 +24,7 @@ modules:
   - type: script
     scripts:
       - cosmic/install_caffeine.sh
-      - install_opentabletdriver.sh
-
+  
   - type: files
     files:
       - source: system/etc
