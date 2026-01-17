@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -oue pipefail #fail on error
 set -x #echo on
 
