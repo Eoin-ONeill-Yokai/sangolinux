@@ -1,11 +1,7 @@
 #/bin/bash
 
-# Reassign cd,find,vim,grep,bat to rust equivalents. Note: Maybe too gimmicky?
+# Reassign cd Note: Maybe too gimmicky?
 alias cd=z
-alias find=fd
-alias vim=hx
-# alias grep=rg
-alias cat=bat
 
 # Set up fzf initial configuration to avoid wine-induced infinite recursion.
 export FZF_DEFAULT_OPTS="
