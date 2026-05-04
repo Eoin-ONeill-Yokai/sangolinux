@@ -4,10 +4,7 @@ modules:
       - install_orchis_dark_sango.sh
 
   - type: rpm-ostree
-    install:
-      # Design
-      - gnome-themes-extra
-      
+    install:      
       # Icons
       - gnome-icon-theme
       - paper-icon-theme
