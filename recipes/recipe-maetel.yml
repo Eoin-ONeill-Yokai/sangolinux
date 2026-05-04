@@ -25,10 +25,6 @@ modules:
     scripts:
       - cosmic/install_caffeine.sh
   
-  - type: script
-    scripts:
-      - install_digimend.sh
-  
   - type: files
     files:
       - source: system/etc
