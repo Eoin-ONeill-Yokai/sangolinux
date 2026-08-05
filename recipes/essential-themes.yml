@@ -3,18 +3,19 @@ modules:
     scripts:
       - install_orchis_dark_sango.sh
 
-  - type: rpm-ostree
-    install:      
-      # Icons
-      - gnome-icon-theme
-      - paper-icon-theme
-      - breeze-icon-theme 
-      - papirus-icon-theme
+  - type: dnf
+    install:
+      packages:      
+        # Icons
+        - gnome-icon-theme
+        - paper-icon-theme
+        - breeze-icon-theme 
+        - papirus-icon-theme
 
-      # Fonts
-      - abattis-cantarell-fonts # Cantarell font
-      - fontawesome-fonts-all # All other fonts
-      - google-noto-emoji-fonts # For basic emoji
+        # Fonts
+        - abattis-cantarell-fonts # Cantarell font
+        - fontawesome-fonts-all # All other fonts
+        - google-noto-emoji-fonts # For basic emoji
 
   - type: containerfile
     snippets:

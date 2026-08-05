@@ -1,7 +1,8 @@
 modules:
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - sddm
+      packages:
+        - sddm
   
   - type: systemd 
     system:
@@ -9,14 +10,15 @@ modules:
         - sddm.service
 
   # SDDM-Simple dependencies
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - qt5-qtquickcontrols2
-      - qt5-qtgraphicaleffects
-      - qt5-qtsvg
-      - qt6-qtsvg
-      - qt5-qtmultimedia
-      - qt6-qtmultimedia
+      packages:
+        - qt5-qtquickcontrols2
+        - qt5-qtgraphicaleffects
+        - qt5-qtsvg
+        - qt6-qtsvg
+        - qt5-qtmultimedia
+        - qt6-qtmultimedia
 
   - type: script
     scripts:
