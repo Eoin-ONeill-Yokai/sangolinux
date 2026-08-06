@@ -3,7 +3,7 @@ repos:
   cleanup: true
   copr:
     enable:
-      - solopasha/hyprland    
+      - yalter/niri
 install:
   packages:
 # Basic environment needs
@@ -57,11 +57,8 @@ install:
     - dconf
     - gnome-settings-daemon
 
-    - hyprland # The WM
-    - xdg-desktop-portal-hyprland #Basic xdg desktop portals, needed for flatpak
-    - waybar # Top bar
-  #  - hyprpaper # Wallpaper support (TODO missing from newest DNF)
-    - dunst # Notification Daemon
+# Window manager
+    - niri
 
 # File and Management Applications
     - thunar
@@ -82,14 +79,8 @@ install:
     # Misc
     - android-tools # Allows fast access to android device. Maybe unnecessary in base?
 
-# Screenshoting
-    - slurp # Selects a region of the screen for arbitrary use.
-    - grim # Snaps images from a swaywm window context.
-
 # Display util
     - wlr-randr # Screen config
-    - swayidle # Idle tracker
     - brightnessctl # Brigtness control
     - wlsunset # Sunsetting options
-    - swaylock # Lock screen, consider replacement with hyprlock.
     - kanshi # For screen disabling / auto locking.
