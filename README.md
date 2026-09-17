@@ -9,8 +9,6 @@ Linux images based on the [Blue Build](https://blue-build.org/) project. Uses [U
 - `sango:latest` A Budgie desktop environment that's similar to "classic" windows paradigms.
 - `maetel:latest` A Cosmic DE based environment with flexible user configuration and nice aesthetics. 
 - `amate:latest` A soft-branch of `aurora` featuring a KDE desktop environment. I wouldn't recommend this over aurora yet, but it's here.
-- `harlock:latest` Features a simple tiling desktop environment using Hyprland. Depending on how things change in the future, this might migrate to Sway w/ animation plugins. It should also come with `flavours` base16 theming options and configurations.
-
 
 ### Design Goals
 - Utility scripts and services that help keep clean user folders or other file naming goals.
