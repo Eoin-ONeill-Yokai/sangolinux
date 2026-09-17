@@ -15,6 +15,7 @@ modules:
 
   - from-file: hyprland-basics.yml
   - from-file: shared-flatpaks.yml
+  - from-file: shared-utilities.yml
 
   - from-file: rust-core-and-utils.yml
 
