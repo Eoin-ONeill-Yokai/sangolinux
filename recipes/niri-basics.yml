@@ -1,13 +1,8 @@
-type: dnf
-repos:
-  cleanup: true
-  copr:
-    enable:
-      - yalter/niri
+type: dnf 
 install:
   packages:
 # Basic environment needs
-    - xorg-x11-server-Xwayland # X11 compat
+    - xwayland-satellite # X11 compat
     - power-profiles-daemon # For laptop power profile
     - xdg-user-dirs # For common home folders / environment variables, such as ~/Downloads, ~/Documents, etc etc
     - polkit # Security / privledge elevation
@@ -20,6 +15,7 @@ install:
     - helix # A different text editor, vim substitute. Invoke `hx`.
     - tmux
     - toolbox
+    - zoxide
     
 # Sound
     - wireplumber
@@ -56,9 +52,7 @@ install:
 # Gnome settings
     - dconf
     - gnome-settings-daemon
-
-# Window manager
-    - niri
+    - xdg-desktop-portal-wlr #Basic xdg desktop portals, needed for flatpak
 
 # File and Management Applications
     - thunar
@@ -75,12 +69,10 @@ install:
     - gvfs-smb
     - gvfs-nfs
     - gvfs-fuse
-    - gvfs-archive
+    
     # Misc
     - android-tools # Allows fast access to android device. Maybe unnecessary in base?
 
-# Display util
-    - wlr-randr # Screen config
-    - brightnessctl # Brigtness control
-    - wlsunset # Sunsetting options
-    - kanshi # For screen disabling / auto locking.
+# Compositor and Shell
+    - niri
+    - noctalia
